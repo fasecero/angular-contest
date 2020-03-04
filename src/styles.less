@@ -29,6 +29,7 @@ body {
   line-height: 1.5;
   text-align: left;
   background-color: #fff;
+  font-family: var(--font-family-sans-serif);
 }
 
 sub-navigation{
@@ -43,7 +44,6 @@ sub-navigation{
   position: absolute;
   height: 100%;
   width: 100%;
-  font-family: var(--font-family-sans-serif);
 }
 
 * {
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  font-family: var(--font-family-sans-serif);
+  font-family: var(--font-family-monospace);
 }
 
 a {
@@ -243,6 +243,17 @@ a {
 
 a img {
   border: none;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .xng-breadcrumb-item, .xng-breadcrumb-separator, .xng-breadcrumb-trail {
