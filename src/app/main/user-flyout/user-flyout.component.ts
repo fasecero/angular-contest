@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 import { User } from '../../shared-components/user';
 import { UserService } from '../../shared-components/user.service';
@@ -9,7 +10,7 @@ import { UserService } from '../../shared-components/user.service';
   styleUrls: ['./user-flyout.component.less']
 })
 export class UserFlyoutComponent implements OnInit {
-
+  faUser = faUser;
   currentUser:User;
 
   constructor(private userService:UserService) { }

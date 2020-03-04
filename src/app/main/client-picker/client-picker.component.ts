@@ -1,4 +1,5 @@
 import { Component, Input, EventEmitter, Output, OnInit } from '@angular/core';
+import { faServer } from '@fortawesome/free-solid-svg-icons';
 
 interface Client {
   id:number;
@@ -11,6 +12,7 @@ interface Client {
   styleUrls: ['./client-picker.component.less']
 })
 export class ClientPickerComponent implements OnInit {
+  faServer= faServer;
 
   @Input() selectedClient = 0;
   @Output() clientChanged = new EventEmitter<number>();

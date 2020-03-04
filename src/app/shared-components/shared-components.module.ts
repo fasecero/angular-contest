@@ -8,6 +8,7 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { LoadingIndicatorComponent } from './loading-indicator/loading-indicator.component';
 import { MoreButtonComponent } from './more-button/more-button.component';
 import { OptionButtonGroupComponent } from './option-button-group/option-button-group.component';
+import { ThemeModule, lightTheme, darkTheme } from '../theme';
 
 
 @NgModule({
@@ -22,6 +23,10 @@ import { OptionButtonGroupComponent } from './option-button-group/option-button-
     CommonModule,
     FormsModule,
     RouterModule,
+    ThemeModule.forRoot({
+      themes: [lightTheme, darkTheme],
+      active: 'dark'
+    }),
   ],
   exports: [
     AppGridComponent,

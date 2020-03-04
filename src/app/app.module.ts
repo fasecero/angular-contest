@@ -10,6 +10,8 @@ import { MainModule } from './main/main.module';
 import { SubnavModule } from './subnav/subnav.module';
 
 import { SentryErrorHandler } from 'src/app/shared-components/sentry.service';
+import { ThemeModule, lightTheme, darkTheme } from './theme';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,11 @@ import { SentryErrorHandler } from 'src/app/shared-components/sentry.service';
     SubnavModule,
     BreadcrumbModule,
     HttpClientModule,
+    FontAwesomeModule,
+    ThemeModule.forRoot({
+      themes: [lightTheme, darkTheme],
+      active: 'dark'
+    }),
   ],
   providers: [
     { provide: ErrorHandler, useClass: SentryErrorHandler }

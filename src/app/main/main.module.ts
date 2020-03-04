@@ -10,6 +10,8 @@ import { LanguagePickerComponent } from './language-picker/language-picker.compo
 import { A11yFlyoutComponent } from './a11y-flyout/a11y-flyout.component';
 import { UserFlyoutComponent } from './user-flyout/user-flyout.component';
 import { ClientPickerComponent } from './client-picker/client-picker.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ThemeModule, lightTheme, darkTheme } from '../theme';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,17 @@ import { ClientPickerComponent } from './client-picker/client-picker.component';
     LanguagePickerComponent,
     A11yFlyoutComponent,
     UserFlyoutComponent,
-    ClientPickerComponent
+    ClientPickerComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule,
+    ThemeModule.forRoot({
+      themes: [lightTheme, darkTheme],
+      active: 'dark'
+    }),
   ],
   exports: [
     HeaderComponent

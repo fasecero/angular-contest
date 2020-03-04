@@ -6,6 +6,8 @@ import { HelpComponent } from './help/help.component';
 import { SubNavigationComponent } from './sub-navigation/sub-navigation.component';
 import { ApiButtonComponent } from './api-button/api-button.component';
 import { AdminButtonComponent } from './admin-button/admin-button.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ThemeModule, lightTheme, darkTheme } from '../theme';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,11 @@ import { AdminButtonComponent } from './admin-button/admin-button.component';
   imports: [
     CommonModule,
     RouterModule,
+    FontAwesomeModule,
+    ThemeModule.forRoot({
+      themes: [lightTheme, darkTheme],
+      active: 'dark'
+    }),
   ],
   exports: [
     SubNavigationComponent
