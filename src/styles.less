@@ -149,6 +149,7 @@ button {
 .dropdown-menu{
   background-color: var(--grey-bg);
   border-radius: 0 0 var(--button-radius) var(--button-radius);
+  border: solid 1px var(--grey-border);;
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -163,7 +164,7 @@ button {
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
-  color: var(--primary-text);
+  color: var(--text-color);
 
   &:hover{
     background-color: var(--primary);
@@ -340,7 +341,7 @@ small,
   width: 16px;
   background-color: transparent;
   border-radius: 50%;
-  border: solid 2px var(--page-bg);
+  border: solid 2px var(--radio-border);
 }
 
 .radio:hover input ~ .checkmark {
@@ -365,6 +366,10 @@ small,
   height: 8px;
   border-radius: 50%;
   background: var(--primary);
+}
+
+.logo{
+  content: var(--logo-url);
 }
 
 /* RESPONSIVE LAYOUT HELPERS */

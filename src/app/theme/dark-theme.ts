@@ -9,11 +9,14 @@ export const darkTheme: Theme = {
 
     '--grey-bg': '#2D3436',
     '--grey-text': '#636D73',
+    '--grey-border': '#2D3436',
 
     '--dark-green': '#282E30',
     '--dark-green-text': '#8EA2AB',
 
     '--text-color-lv1': 'white',
+
+    '--logo-url': 'url("assets/community-sift-logo-dark-bg.svg")',
     // Core
     '--page-bg': '#0c0c0c',
 
@@ -62,6 +65,8 @@ export const darkTheme: Theme = {
 
     '--close-btn-border': '#0C0C0C',
     '--close-btn-txt': 'white',
+
+    '--radio-border': '#0c0c0c',
 
     // Horizontal rule
     '--hr-color': 'rgba(255, 255, 255, 0.25)',

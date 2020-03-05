@@ -1,3 +1,4 @@
+/* Light theme variables */
 import { Theme } from './symbols';
 
 export const lightTheme: Theme = {
@@ -6,13 +7,16 @@ export const lightTheme: Theme = {
     '--primary': '#58C1B8',
     '--primary-text': 'white',
 
-    '--grey-bg': '#2D3436',
-    '--grey-text': '#636D73',
+    '--grey-bg': 'white',
+    '--grey-text': '#2D3436',
+    '--grey-border': '#D4D4D4',
 
     '--dark-green': 'white',
     '--dark-green-text': '#8EA2AB',
 
-    '--text-color-lv1': 'white',
+    '--text-color-lv1': '#222',
+
+    '--logo-url': 'url("assets/community-sift-logo-light-bg.svg")',
     // Core
     '--page-bg': 'white',
 
@@ -59,6 +63,8 @@ export const lightTheme: Theme = {
 
     '--close-btn-border': '#D4D4D4',
     '--close-btn-txt': '#8EA2AB',
+
+    '--radio-border': '#D4D4D4',
 
     // Horizontal rule
     '--hr-color': 'rgba(255, 255, 255, 0.25)',
