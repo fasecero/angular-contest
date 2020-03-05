@@ -60,7 +60,7 @@
     "@babel/node": "7.8.4",
     "@babel/preset-env": "7.8.6",
     "@mdi/font": "4.9.95",
-    "@sentry/browser": "5.13.0",
+    "@sentry/browser": "5.13.2",
     "lodash": "4.17.15",
     "material-design-icons": "3.0.1",
     "rxjs": "6.5.4",
